@@ -11,5 +11,5 @@ As the firmware of one of the machines was outdated, we needed a copy of an `EPR
 
 After looking at the data sheet, it was obvious that a simple and good solution would be an Arduino based programmer. Other old programmer need a PC with parallel port and old software. Much too complicated.
 
-So I recycled an old ATmega644 project, added two DC-DC Boost converter and an I²C EEPROM, and ready was the EPROM Programmer.
+So I recycled an old ATmega644 project, "Arduinoized" it, added two DC-DC Boost converter and an I²C EEPROM, and ready was the EPROM Programmer.
 No PC and no shift register are needed. When pressing the (yellow) button in `READ` mode the EPROM is read and written to the I²C EEPROM. After switching into `PROGRAM` mode and pressing the button the EPROM is programmed by copying the EEPROM content.
